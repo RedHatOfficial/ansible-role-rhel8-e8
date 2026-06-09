@@ -2,7 +2,6 @@
 # defaults file for rhel8_e8
 var_system_crypto_policy: DEFAULT:NO-SHA1
 var_authselect_profile: sssd
-sysctl_kernel_kptr_restrict_value: '1'
 var_selinux_policy_name: targeted
 var_selinux_state: enforcing
 var_accounts_passwords_pam_faillock_dir: /var/log/faillock
@@ -34,6 +33,7 @@ DISA_STIG_RHEL_08_010520: true
 DISA_STIG_RHEL_08_010522: true
 DISA_STIG_RHEL_08_010550: true
 DISA_STIG_RHEL_08_010561: true
+DISA_STIG_RHEL_08_010670: true
 DISA_STIG_RHEL_08_010830: true
 DISA_STIG_RHEL_08_020330: true
 DISA_STIG_RHEL_08_020331: true
@@ -153,6 +153,7 @@ service_auditd_enabled: true
 service_avahi_daemon_disabled: true
 service_fapolicyd_enabled: true
 service_firewalld_enabled: true
+service_kdump_disabled: true
 service_rsyslog_enabled: true
 service_squid_disabled: true
 service_telnet_disabled: true
